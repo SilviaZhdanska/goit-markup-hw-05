@@ -652,20 +652,9 @@ img {
 .close-btn:hover,
 .close-btn:focus {
   background-color: #404bbf;
+  fill: #ffffff;
   border: none;
 }
-
-.close-btn-img {
-  fill: #2e2f42;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.close-btn-img:hover,
-.close-btn-img:focus {
-  fill: #ffffff;
-}
-
-
 
 .modal-text {
   font-weight: 500;
@@ -677,9 +666,7 @@ img {
   width: 360px;
   margin-top: 24px;
   margin-bottom: 16px;
-
 }
-
 
 
 .modal-form {}
@@ -798,12 +785,11 @@ img {
   border-radius: 2px;
   background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  fill: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: inline-flex;
   align-items: center;
   justify-content: center;
-
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: transparent;
 }
 
 
