@@ -783,7 +783,9 @@ img {
   border: 1px solid rgba(46, 47, 66, 0.4);
 }
 
-.modal-cbx:checked+.cbx-button {
+
+.modal-cbx:checked+.cbx-button span {
+  background-color: #F4F4FD;
   border: none;
   fill: #404bbf;
 }
@@ -807,12 +809,6 @@ img {
 
 
 .cbx-icon {}
-
-/* .modal-btn-wrap {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
 
 
 .modal-btn {
