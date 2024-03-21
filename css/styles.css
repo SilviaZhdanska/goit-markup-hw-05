@@ -639,7 +639,6 @@ img {
   right: 24px;
   top: 24px;
   stroke-width: 1px;
-  stroke: rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: #e7e9fc;
@@ -647,10 +646,14 @@ img {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
+.close-btn:hover,
+.close-btn:focus {
+  background-color: #404bbf;
+  border: none;
+}
 
 .close-btn-img {
   fill: #2e2f42;
@@ -662,12 +665,7 @@ img {
   fill: #ffffff;
 }
 
-.close-btn:hover,
-.close-btn:focus {
-  background-color: #404bbf;
 
-  border: none;
-}
 
 .modal-text {
   font-weight: 500;
@@ -740,6 +738,11 @@ img {
   fill: #4D5AE5;
 }
 
+
+.modal-comment-wrap {
+  margin-bottom: 16px;
+}
+
 .modal-comment {
   margin-bottom: 16px;
 }
@@ -782,14 +785,9 @@ img {
 
 .modal-cbx:checked+.cbx-button {
   border: none;
-  fill: #F4F4FD;
+  fill: #404bbf;
 }
 
-/* .modal-cbx:active {
-  border-radius: 2px;
-  fill: #404bbf;
-  border: 1px solid #404bbf;
-} */
 
 .cbx-button {
   width: 16px;
@@ -802,18 +800,19 @@ img {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  fill: transparent;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
 
 .cbx-icon {}
 
-.modal-btn-wrap {
+/* .modal-btn-wrap {
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 
 
 .modal-btn {
@@ -822,9 +821,12 @@ img {
   min-width: 169px;
   height: 56px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  background: #4d5ae5;
+  background-color: #4d5ae5;
   margin-top: 24px;
+  margin-left: 95px;
   display: block;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
