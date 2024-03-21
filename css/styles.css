@@ -656,6 +656,10 @@ img {
   border: none;
 }
 
+.close-btn-img {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .modal-text {
   font-weight: 500;
   font-size: 16px;
@@ -771,7 +775,7 @@ img {
 }
 
 
-.modal-cbx:checked+.cbx-button span {
+.modal-cbx:checked+span.cbx-button {
   background-color: #F4F4FD;
   border: none;
   fill: #404bbf;
