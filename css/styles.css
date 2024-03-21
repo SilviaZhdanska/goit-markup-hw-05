@@ -775,10 +775,10 @@ img {
 }
 
 
-.modal-cbx:checked+span.cbx-button {
-  background-color: #F4F4FD;
+.modal-cbx:checked+.modal-label span {
+  fill: #F4F4FD;
   border: none;
-  fill: #404bbf;
+  background-color: #404bbf;
 }
 
 
